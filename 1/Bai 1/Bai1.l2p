@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\main.o"
+".\startup_stm32f10x_hd.o"
+".\system_stm32f10x.o"
+--strict --scatter ".\Bai1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Bai1.map" -o .\Bai1.axf

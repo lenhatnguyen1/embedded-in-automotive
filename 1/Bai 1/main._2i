@@ -1,0 +1,8 @@
+--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork 
+-I "C:\Learn Embedded\Project\Embedded\Bai 1\RTE"
+-I "C:\Learn Embedded\Project\Embedded\Bai 1\RTE\Device\STM32F103RC"
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+-D_RTE_ -DSTM32F10X_HD
+-o .\main.o --omf_browse .\main.crf --depend .\main.d --feedback ".\Bai1.fed" "main.c"

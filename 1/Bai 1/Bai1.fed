@@ -1,0 +1,10 @@
+;#<FEEDBACK># ARM Linker, 5040049: Last Updated: Mon Jun 10 15:45:00 2024
+;VERSION 0.2
+;FILE main.o
+__asm___6_main_c_delay____REV16 <= USED 0
+__asm___6_main_c_delay____REVSH <= USED 0
+;FILE startup_stm32f10x_hd.o
+;FILE system_stm32f10x.o
+SystemCoreClockUpdate <= USED 0
+__asm___18_system_stm32f10x_c_5d646a67____REV16 <= USED 0
+__asm___18_system_stm32f10x_c_5d646a67____REVSH <= USED 0
