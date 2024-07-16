@@ -84,6 +84,19 @@ Benefits:
 - Enables precise timing control for various applications.
 - Frees up the main program to handle other tasks while the timer handles timing.
 
+Timer Config
+```c
+TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    TIM_TimeBaseInitStruct.TIM_Prescaler = 7200-1;
+    TIM_TimeBaseInitStruct.TIM_Period = 0xFFFF;
+    TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseInitStruct);
+    TIM_Cmd(TIM2, ENABLE);
+```
+Timer Application
+
 ```c
 void delay_ms(uint8_t timedelay)
     {
